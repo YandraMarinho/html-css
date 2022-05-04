@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+div{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    border: 1px solid black;
+}
+
+div:hover{
+    background-color: chocolate;
+}
+
+div > .p1, .p2, .p3 {
+    display: none;
+    
+    
+}
+div:hover > .p1{
+    display: block;
+    color: black;
+    background-color: aqua;
+}
+
+div:hover > .p2{
+    display: block;
+    background-color: blue;
+}
+
+div:hover > .p3{
+    display: block;
+    background-color: blueviolet;
+}
+
+div:hover {
+    color:rgb(0, 255, 242)
+    
+}
+
+.pp:hover{
+    background-color: aqua;
+}
+

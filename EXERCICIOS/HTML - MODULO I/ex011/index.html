@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mídias em HTML5</title>
+</head>
+<body>
+    <P> Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua
+        o tamanho do seu navegador.
+    </P>
+    <picture>
+        <source media="(max-width: 780px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="img grande">
+    </picture>
+
+    <h1> reproduzindo audio </h1>
+    <p>Vamos aprender a reproduzir audio em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop> 
+        <!--'O atributo 'controls' vai apresentar o player na tela. Caso não seja colocado na tag
+        <audio>'--> 
+        <!--'O atributo 'autoplay', quando inserido, vai iniciar a reprodução do áudio assim que
+        a página for carregada. '--> 
+        <!--O atributo 'loop' vai fazer com que o áudio seja repetido eternamente assim que
+        terminar a sua reprodução.-->
+
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"> <!-- o site vai tentar carregar primeiro esse formato --> 
+        <source src="midia/guanacast-33.mp3" type="audio/ogg"> <!-- depois o site vai tentar carregar esse formato --> 
+        <source src="midia/guanacast-33.mp3" type="audio/wav"> <!-- e por último esse formato --> 
+        <p> 
+            Infelizmente seu navegador não consegue reproduzir áUdio.  <!-- caso o navegador não consigar executar em nenhum formato ofereça o dwd-->
+            <a href="midia/guanacast-33.mp3"> Clique aqui para baixar o arquivo MP3</a>
+        </p>
+    </audio>
+</body>
+</html>

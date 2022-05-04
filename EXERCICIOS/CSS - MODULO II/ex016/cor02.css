@@ -1,0 +1,8 @@
+* {  /*configurações globais das CSS*/
+    height: 100%;
+}
+body {
+
+    background-image: radial-gradient(circle, #A61C28,#AD3737,#2E338C, #7E81BF) ;
+    background-attachment: fixed;
+}

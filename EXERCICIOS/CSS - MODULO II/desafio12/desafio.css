@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'idroid';
+    src:url('idroid.otf') format('opentype');
+    font-style: normal;
+}
+ h2{
+    font-family: 'idroid';
+    font-size: 2em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, #40976670, #3dc43d67) ;
+    color: #02735E;
+}
+
+body{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #3bb34156;
+    margin: 0px;
+}
+
+header{
+    
+    background-image: linear-gradient(to top,  #025951, #3dc43d);
+    color: white;
+    text-align: center;
+
+}
+
+header > nav {
+    text-align: left;
+    padding: 3px;
+    
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+
+.menu:hover{
+    background-color: #0e993e98;
+}
+
+
+section{
+    background-color: white;
+    margin: 64px;
+    padding: 20px;
+    border-radius: 0px 0px 7px 5px  ;
+    margin: 1px 150px 15px 150px;
+
+}
+
+p{
+    text-indent: 30px;
+}
+
+.android{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.dan, .scape, .droids{
+    color: #02735E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.artigo2{
+    background-color: #6fe66f46;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+.parag{
+    padding-bottom: 20px;
+}
+.htres{
+    background-color: #32a727c0;
+    border-radius: 5px 5px 0px 0px ;
+}
+
+.artigo2 > p{
+    margin: 20px;
+}
+
+ul{
+    display:inline-block;
+    
+}
+.lista2{
+    margin-left: 80px;
+}
+
+.d{
+    color: green;
+    font-weight: bold;
+}
+
+.video{
+    text-align: center;
+    background-color: #025951;
+    margin: 0;
+}
+
+.irina{
+    color: green;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #02735E;
+    padding: 3px;
+    
+}

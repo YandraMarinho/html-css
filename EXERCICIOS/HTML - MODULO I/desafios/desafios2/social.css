@@ -1,0 +1,31 @@
+body {
+    background-color:rgba(218, 173, 216, 0.514);
+    color: rgba(122, 50, 122, 0.808);
+    text-align: center;
+    padding: 10px;
+}
+
+div#format 
+{
+    background-color: rgba(148, 81, 148, 0.219);
+    text-align: center;
+    box-shadow: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px 8px 8px;
+    color:rgba(122, 50, 122, 0.575);
+}
+
+
+
+section {
+    text-align: center;
+    background-color: rgba(226, 93, 147, 0.219);
+    width: 400px;
+    height: 230px;
+    border-radius: 8px 8px 8px;
+    color: rgb(81, 15, 94);
+    margin-top:auto;
+}
+
+
