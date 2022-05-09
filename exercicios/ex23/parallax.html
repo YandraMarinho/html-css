@@ -7,24 +7,34 @@
   <title>Parallax Effect</title>
   <style>
 
-  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
     *{
       margin: 0;
+      padding: 0px;
+    }
+
+    html, body{
+      background-color:#a85e6c80;
+      font-size: 100vw;
     }
 
     header{
       font-family: 'Amatic SC', cursive;
+      color: white;
       text-align: center;
       font-weight: bolder;
-      font-size: 2.3em;
+      font-size: 3vw;
       padding: 30px;
+      
       
     }
 
     p{
       font-family: 'Space Mono', monospace;
+      font-size: 2vw;
+      line-height: 1.3em;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -34,29 +44,43 @@
       padding-right: 50px;
      }
 
+
+
+    .b-circulo{
+      height: 600px;
+      color: black;
+      background-color: #F2DADE;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+
+    }
+
+
     .circulo{
   
-      height: 200px;
-    
+      height: 300px;
       background-image: url("imagens/circulo-jpg.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: right center ;
       background-size: cover;
       
+    
     }
 
-    .b-circulo{
-      height: 200px;
+    .b-primarias{
+      height: 600px;
       color: black;
       background-color: #F2DADE;
       justify-content: center;
       align-items: center;
-
     }
 
     .primarias{
-      height: 200px;
+      height: 300px;
       background-image: url('imagens/primarias-jpg.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -65,16 +89,16 @@
       
     }
 
-    .b-primarias{
-      height: 200px;
-      color: black;
+    .b-secundarias{
+      height: 600px;
       background-color: #F2DADE;
       justify-content: center;
       align-items: center;
     }
 
+
     .secundarias{
-      height: 200px;
+      height: 300px;
       background-image: url('imagens/secundarias-jpg.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -82,15 +106,15 @@
       background-size: cover;
     }
 
-    .b-secundarias{
-      height: 200px;
+    .b-terciarias{
+      height: 600px;
       background-color: #F2DADE;
       justify-content: center;
       align-items: center;
     }
 
     .terciarias{
-      height: 200px;
+      height: 300px;
       background-image: url('imagens/terciarias.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -98,15 +122,15 @@
       background-size: cover;
     }
 
-    .b-terciarias{
-      height: 200px;
+    .b-complementares{
+      height: 600px;
       background-color: #F2DADE;
       justify-content: center;
       align-items: center;
     }
 
     .complementares{
-      height: 200px;
+      height: 300px;
       background-image: url('imagens/complementar.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -114,15 +138,16 @@
       background-size: cover;
     }
 
-    .b-complementares{
-      height: 200px;
-
+    .b-analogas{
+      height: 600px;
       background-color: #F2DADE;
       justify-content: center;
       align-items: center;
     }
+
+
     .analogas{
-      height: 200px;
+      height: 300px;
       background-image: url('imagens/analogas-jpg.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -130,15 +155,16 @@
       background-size: cover;
     }
 
-    .b-analogas{
-      height: 200px;
+    
+    .b-mono{
+      height: 600px;
       background-color: #F2DADE;
       justify-content: center;
       align-items: center;
     }
     
     .mono{
-      height: 200px;
+      height: 300px;
       background-image: url('imagens/mono.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -146,12 +172,7 @@
       background-size: cover;
     }
 
-    .b-mono{
-      height: 200px;
-      background-color: #F2DADE;
-      justify-content: center;
-      align-items: center;
-    }
+    
 
   </style>
 
@@ -162,28 +183,30 @@
     <h1>Teoria das Cores</h1>
   </header>
   
+  <div class="b-circulo">
+
+    <p>
+      Ao observar a passagem da luz do sol pelo objeto, Newton percebeu que a luz se decompunha em diversas cores, 
+      que variavam do tom violeta ao vermelho. Ele deu ao feixe de luz o nome de espectro. A partir dessa observação surge o círculo cromático.  Ele contém doze diferentes cores, que ajudam a visualizar quais são as cores primárias, as secundárias e as terciárias que formam o espectro visível. 
+    </p>
+    
+      
+    
+  </div>
 
   <div class="circulo">  
   </div>
 
-  <div class="b-circulo">
-    <p>
-      Ao observar a passagem da luz do sol pelo objeto, Newton percebeu que a luz se decompunha em diversas cores, que variavam do tom violeta ao vermelho. Ele deu ao feixe de luz o nome de espectro. A partir dessa observação surge o círculo cromático. Ele contém doze diferentes cores, que ajudam a visualizar quais são as cores primárias, as secundárias e as terciárias que formam o espectro visível.
+  
+  <div class="b-primarias" id="foto">
+    <p class="ft">
+      Cores primárias são as cores puras, ou seja, que não podem ser criadas a partir da combinação de outras cores. As cores primárias são: o amarelo, o vermelho (magenta) e o azul (ciano).
     </p>
   </div>
 
   <div class="primarias">
   </div>
 
-  <div class="b-primarias">
-    <p>
-      Cores primárias são as cores puras, ou seja, que não podem ser criadas a partir da combinação de outras cores. As cores primárias são: o amarelo, o vermelho (magenta) e o azul (ciano).
-    </p>
-  </div>
-
-  <div class="secundarias">
-
-  </div>
   
   <div class="b-secundarias">
     <p>
@@ -191,25 +214,28 @@
     </p>
   </div>
 
-  <div class="terciarias">
+  <div class="secundarias">
   </div>
-
+  
   <div class="b-terciarias">
     <p>
       As cores terciárias são formadas a partir da combinação de uma cor primária com uma cor secundária, que resultam nas cores: vermelho-arroxeado, vermelho alaranjado, amarelo-alaranjado, amarelo-esverdeado, azul-esverdeado e azul arroxeado.
     </p>
   </div>
-  
-  <div class="analogas">
 
+
+  <div class="terciarias">
   </div>
 
+  
   <div class="b-analogas">
     <p>
       A cor primária escolhida é a cor principal, enquanto as cores seguintes têm a função de garantir mais harmonia ao conjunto de cores, podendo ser utilizadas em detalhes ou complementos.
     </p>
   </div>
-  <div class="complementares">
+  
+  <div class="analogas">
+
   </div>
 
   <div class="b-complementares">
@@ -218,14 +244,20 @@
     </p>
   </div>
 
-  <div class="mono">
+  <div class="complementares">
   </div>
 
+  
   <div class="b-mono">
     <p>
       Na harmonia monocromática é escolhida uma cor inicial, que deverá ser trabalhada juntamente com suas variações de tonalidade, que resultam de diferenças entre saturação e quantidade de luz e sombra, por exemplo.
     </p>
   </div>
+
+  <div class="mono">
+  </div>
+
+  
 
 
 
