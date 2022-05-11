@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 02 de Tabelas</title>
+  <style>
+    body{
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    table{
+      border-collapse: collapse;
+    }
+
+    caption{
+      padding: 10px;
+    }
+    th, tr,td{
+      border: 1px solid;
+      padding: 10px;
+    }
+    .th-left{
+      text-align: left;
+    }
+
+    thead, .th-left{
+      color: white;
+      background-color:rgb(92, 89, 89);
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Desafio 02 de Tabelas - Curso em Vídeo</h1>
+
+  <table>
+
+    <caption>
+      Notas do Semestre
+    </caption>
+
+    <thead>
+      <tr>
+        <th rowspan="2" scope="col"> 
+          Área
+        </th>
+        <th rowspan="2" scope="col">
+          Disciplinas
+        </th>
+        <th colspan="2" scope="colgroup">
+          Notas
+        </th>
+        <th rowspan="2" scope="col">Média</th>
+      </tr>
+
+      <tr>
+        <th scope="col">Nota 1</th>
+        <th scope="col">Nota 2</th> 
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th rowspan="5" scope="rowgroup">Natureza</th>
+      </tr>
+        
+      <tr>
+        <td>Matemática</td>
+        <td>8.2</td>
+        <td>7.5</td>
+        <td>9.7</td>
+      </tr>
+      <tr>
+        <td>Física</td>
+        <td>7.7</td>
+        <td>8.0</td>
+        <td>7.3</td>
+      </tr>
+      <tr>
+        <td>Química</td>
+        <td>9.0</td>
+        <td>10.0</td>
+        <td>9.1</td>
+      </tr>
+      <tr>
+        <td>Biologia</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+      </tr>
+    
+
+      
+      <tr>
+        <th colspan="4" class="th-left" scope="row">
+          Média Natureza
+        </th>
+        <td class="th-left">8.87</td>
+      </tr>
+     
+
+      <tr>
+        <th rowspan="2" scope="rowgroup">
+          Humanas
+        </th>
+        <td>História</td>
+        <td>8.7</td>
+        <td>9.4</td>
+        <td>9.3</td>
+      </tr>
+
+      <tr>
+        <td>
+          Geografia
+        </td>
+        <td>9.8</td>
+        <td>9.2</td>
+        <td>8.6</td>
+      </tr>
+
+      <tr>
+        <th colspan="4" class="th-left" scope="row">
+          Média Humanas
+        </th>
+        <td class="th-left"> 9.17</td>
+      </tr>
+
+    </tbody>
+  </table>
+  
+</body>
+</html>
